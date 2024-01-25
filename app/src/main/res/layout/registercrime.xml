@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_centerInParent="true"
+    android:padding="16dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report a Crime"
+            android:textSize="24sp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/edescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter crime description"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:inputType="date"
+            android:id="@+id/edate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of crime"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:inputType="time"
+            android:id="@+id/etime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time of crime"
+            android:layout_marginTop="8dp"/>
+
+
+        <EditText
+            android:id="@+id/ephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your phone number"
+            android:inputType="phone"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Report"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>
